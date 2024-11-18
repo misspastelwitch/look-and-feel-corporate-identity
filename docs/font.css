@@ -34,3 +34,27 @@
     margin: 0;
     padding: 0;
 }
+#seven {
+    font-family: Arial, sans-serif;
+    font-size: 1cqw;
+    margin: 0;
+    padding: 0;
+}
+#eight {
+    font-family: Arial, sans-serif;
+    font-size: 2ch;
+    margin: 0;
+    padding: 0;
+}
+#nine {
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+}
+#ten {
+    font-family: Arial, sans-serif;
+    font-size: 1vmax;
+    margin: 0;
+    padding: 0;
+}
