@@ -1,0 +1,29 @@
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.6;
+    background-color: rgb(254, 239, 243);
+    color: sienna;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+  }
+
+
+.container {
+    display: block;
+    position: relative;
+    align-items: center;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    accent-color: maroon;
+  }
+  
+  .inp:hover{
+    color: rgb(233, 191, 208);
+}
