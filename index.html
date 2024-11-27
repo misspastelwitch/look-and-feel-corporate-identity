@@ -1,150 +1,226 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oncollaboration - Antoni van Leeuwenhoek Ziekenhuis</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oncollaboration</title>
+    <link rel="groupstylesheet" href="oncollaboration.css">
     <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="oncollaboration.css">
-    <link rel="icon" href="assets/favicon.jpg">
-</head>
-<body>
+  </head>
+  <body>
 
-
-    <nav class="navbar">
-        <article class="picture-frame">
-            <img src="assets/logotransparent.jpg" alt="Logo" style="width: 160px; height: 100;" />
-        </article>
-        <ul class="menu">
-            <li class="dropdown">
-                Webinars
-                <ul class="dropdown-content">
-                    <li>Upcoming</li>
-                    <li>Past</li>
-                </ul>
-            </li>
-            <li>Contourings</li>
-            <li>Articles</li>
-            <li>Profile</li>
-        </ul>
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="I'm looking for...">
-            <button class="search-button">search</button>
+    <div>
+      <div class="backgroundblur"></div>
+      <div  class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="links">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
-    </nav>
 
-    <main class="main-content">
+        <div class="inputdrawer">
+          <input
+            type="text"
+            placeholder="I'm looking for..."
+            class="inputdrawer"
+          />
 
-        <!-- Webinar Section -->
-        <div class="media-and-comments-container">
-            <div class="media-player">
-                <video controls>
-        <section class="media-player">
-            <video controls>
-                <source src="video-source.mp4" type="video/mp4">
-            </video>
-        </video>
+          <button class="searchdrawer">search</button>
+        </div>
+      </div>
     </div>
-        </section>
 
 
-        <!-- Chat Section -->
-        <div class="comments-section">
+    <!-- Navbar -->
+    <div class="nav">
+      <div class="container">
+        <div class="navflex">
+          <img src="/assets/Logo.png" alt="antoni van leeuwenhoek ziekenhuis logo" class="img" />
 
-            <h3>Comments</h3>
-            
-            <form id="commentForm">
-                <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <article id="commentsList">
-            </article>
-        </section>
+          <div class="text">
+            <p>Webinars</p>
+            <p>Contourings</p>
+            <p>Articles</p>
+            <p>Profile</p>
+          </div>
+
+          <div class="inputwrapper">
+            <input
+              type="text"
+              placeholder="I'm looking for..."
+            />
+
+            <button class="search">search</button>
+          </div>
+
+          <span
+            class="hamburger"
+            style="font-size: 38px; cursor: pointer; color: white;"
+            onclick="openNav()"
+            >&#9776;</span
+          >
         </div>
+      </div>
     </div>
-        <script src="script.js"></script>
-    </main>
 
-    <!-- Profile Section -->
-    <section class="profile">
-        <img src="assets/nurse.png" alt="Profile Picture">
-        <article class="profile-info">
-            <h2>Mirte van der Spek</h2>
-            <h3>Antoni van Leeuwenhoek Ziekenhuis</h3>
-            <p>Sinds juni 2021 ben ik werkzaam als verpleegkundig specialist bij de mamma interne geneeskunde in het Antoni van Leeuwenhoek. Het Antoni van Leeuwenhoek spreekt mij aan door de combinatie van multidisciplinaire zorg & wetenschappelijk onderzoek. Dit zorgt voor een hele fijne samenwerking tussen de verschillende betrokken disciplines en bovenal voor excellente- en persoonsgerichte zorg voor de patiënten.</p>
-        </article>
-    </section>
-
-
-        <!-- Contourings Section -->
-
-    <section id="contouring">
-        <h2>Contourings from this webinar</h2>
-        <div class="contouring-list">
-            <article class="contour">
-                <h3>IMA 4-31</h3>
-                <p>Accessory parotid</p>
-                <img src="assets/contouring.jpeg"contouring 1">
-            </article>
-            <article class="contour">
-                <h3>IMA 4-32</h3>
-                <p>Accessory parotid</p>
-                <img src="assets/contouring.jpeg"contouring 1">
-            </article>
-            <article class="contour">
-                <h3>IMA 4-33</h3>
-                <p>Accessory parotid</p>
-                <img src="assets/contouring.jpeg" alt="contouring 1">
-            </article>
-        </div>
-    </section>
-
-    <!-- Articles Section -->
-
-    <section id="relevant-articles">
-
-        <div class="articles">
-            <article class="article">
-            <div class="left">
-                <h2>Fractionation in head and neck</h2>
-                <p>Fractionation in head and neck</p>
-                <a href="#" class="button">Read More</a>
-            </div>
-            
-            <div class="right">
-                <img src="assets/article1.png" alt="Fractionation in head and neck"> 
-            </div>
-        </article>
+    <div class="container">
+      <div class="general">
+        <div class="webinar">
+          <iframe
+            width="100%"
+            height="450"
+            src=""
+          ></iframe>
         </div>
 
-        <div class="articles">
-            <article class="article">
-            <div class="left">
-                <h2>Gastrointestinal</h2>
-                <p>Gastrointestinal</p>
-                <a href="#" class="button">Read More</a>
-            </div>
-            
-            <div class="right">
-                <img src="assets/article2.png" alt="Gastrointestinal"> 
-            </div>
-            </article>
-            </div>
+        <div class="commentdiv">
+          <h1 class="commentheader">Comment</h1>
+          <textarea
+            style="width: 100%"
+            class="textarea"
+            placeholder="Write your comment here..."
+          ></textarea>
 
-        </article>
+          <button class="comment">Comment</button>
         </div>
-    </section>
+      </div>
+    </div>
+    <!-- Speaker profile  -->
+    <div class="container">
+      <div class="speaker">
+        <div class="speakerwrapper">
+          <div>
+            <img
+              src="/assets/nurse.png"
+              alt="Nurse Img"
+              class="nurseimg"
+            />
+          </div>
 
-        <!-- Footer -->
+          <div>
+            <h1 class="header">Mirte van der Spek</h1>
+            <h2 class="subheader">Mirte van der Spek</h2>
+          </div>
+        </div>
 
-    <footer>
-            <p>&copy; 2024 All rights reserved.</p>
-            <ul>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Privacy Statement</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-            </ul>
-    </footer>
+        <p class="speakerinfo">
+          Sinds juni 2021 ben ik werkzaam als verpleegkundig specialist bij de
+          mamma interne geneeskunde in het Antoni van Leeuwenhoek. Het Antoni
+          van Leeuwenhoek spreekt mij aan door de combinatie van
+          multidisciplinaire zorg & wetenschappelijk onderzoek. Dit zorgt voor
+          een hele fijne samenwerking tussen de verschillende betrokken
+          disciplines en bovenal voor excellente- en persoonsgerichte zorg voor
+          de patiënten.
+        </p>
+      </div>
+    </div>
 
-</body>
+    <!-- contourings  -->
+    <div class="container">
+      <div class="contourings">
+        <h1 class="contouringheader">Contourings from this webinar</h1>
+
+        <div class="card">
+          <!-- card-one  -->
+          <div class="carddiv">
+            <h1 class="cardheader">IMA 4-31</h1>
+            <p class="cardinfo">Accessory parotid</p>
+
+            <img
+            src="/assets/contouring.jpeg"
+            alt="Image of a ct scan"
+            class="cardimg"
+            />
+          </div>
+
+          <!-- card-two  -->
+          <div class="card">
+            <!-- card-one  -->
+            <div class="carddiv">
+              <h1 class="cardheader">IMA 4-31</h1>
+              <p class="cardinfo">Accessory parotid</p>
+  
+              <img
+              src="/assets/contouring.jpeg"
+              alt="Image of a ct scan"
+              class="cardimg"
+              />
+            </div>
+
+          <!-- card-three  -->
+          <div class="card">
+            <!-- card-one  -->
+            <div class="carddiv">
+              <h1 class="cardheader">IMA 4-31</h1>
+              <p class="cardinfo">Accessory parotid</p>
+  
+              <img
+              src="/assets/contouring.jpeg"
+              alt="Image of a ct scan"
+              class="cardimg"
+              />
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles  -->
+    <div class="container">
+      <div class="articlewrapper">
+        <div class="articlecard">
+          <div class="leftdiv">
+            <h1 class="articleheader">Fractionation in head and neck</h1>
+            <p class="articletext">Fractionation in head and neck</p>
+            <button class="articlebutton">Read More</button>
+          </div>
+
+          <div class="right-div">
+            <img src="/assets/article1.png" alt="Article header that reads fractionation in head and neck" />
+          </div>
+        </div>
+
+        <div class="articlecard">
+          <div class="leftdiv">
+            <h1 class="articleheader">Gastrointestinal</h1>
+            <p class="articletext">Gastrointestinal</p>
+            <button class="articlebutton">Read More</button>
+          </div>
+
+          <div class="rightdiv">
+            <img src="/assets/article2.png" alt="Article header that reads gastrointestinal" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="footerwrapper">
+      <p class="footertext">© 2024 All rights reserved.</p>
+      <div class="footertextwrapper">
+        <p class="footertext">Disclaimer</p>
+        <p class="footertext">Privacy Statement</p>
+        <p class="footertext">Cookie Policy</p>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mybackdrop").style.width = "100%";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mybackdrop").style.width = "0";
+        document.body.style.overflow = "";
+      }
+    </script>
+
+  </body>
 </html>
