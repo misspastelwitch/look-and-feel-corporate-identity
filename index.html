@@ -5,59 +5,26 @@
     <link rel="icon" href="assets/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oncollaboration</title>
-    <link rel="groupstylesheet" href="oncollaboration.css">
+<link rel="stylesheet" href="https://nawallox.github.io/look-and-feel-styleguide/oncollaboration.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
-    <div>
-      <div class="backgroundblur"></div>
-      <div  class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <div class="links">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div class="inputdrawer">
-          <input
-            type="text"
-            placeholder="I'm looking for..."
-            class="inputdrawer"
-          />
-
-          <button class="searchdrawer">search</button>
-        </div>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Contouring</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Profile</a></li>
+          </ul>
+      </nav>
+      <div class="search-container">
+          <input type="text" class="search-input" placeholder="I'm looking for...">
       </div>
-    </div>
+  </header>
 
-
-    <!-- Navbar -->
-    <div class="nav">
-      <div class="container">
-        <div class="navflex">
-          <img src="/assets/Logo.png" alt="antoni van leeuwenhoek ziekenhuis logo" class="img" />
-
-          <div class="text">
-            <p>Webinars</p>
-            <p>Contourings</p>
-            <p>Articles</p>
-            <p>Profile</p>
-          </div>
-
-          <div class="inputwrapper">
-            <input
-              type="text"
-              placeholder="I'm looking for..."
-            />
-
-            <button class="search">search</button>
-          </div>
-
+  <section class="main page">
           <span
             class="hamburger"
             style="font-size: 38px; cursor: pointer; color: white;"
@@ -69,12 +36,13 @@
     </div>
 
     <div class="container">
+      <h2>Now playing: </h2>
       <div class="general">
         <div class="webinar">
           <iframe
             width="100%"
             height="450"
-            src=""
+            src="https://www.youtube.com/embed/4SzdbF9o1SU"
           ></iframe>
         </div>
 
@@ -90,6 +58,7 @@
         </div>
       </div>
     </div>
+
     <!-- Speaker profile  -->
     <div class="container">
       <div class="speaker">
@@ -197,17 +166,16 @@
         </div>
       </div>
     </div>
-
+  </section>
     <!-- footer  -->
-    <div class="footerwrapper">
-      <p class="footertext">© 2024 All rights reserved.</p>
-      <div class="footertextwrapper">
-        <p class="footertext">Disclaimer</p>
-        <p class="footertext">Privacy Statement</p>
-        <p class="footertext">Cookie Policy</p>
-      </div>
-    </div>
-
+    <footer>
+      <p>&copy; 2024 All rights reserved.</p>
+      <ul>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Statement</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+      </ul>
+  </footer>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
