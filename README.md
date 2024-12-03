@@ -21,6 +21,8 @@ Wat maken we? We zoeken een manier om CT-scans te delen en feedback te geven, en
 
 ## Schetsen
 
+Dit zijn mijn schetsen voor de website tot nu toe:
+
 [versie 1 van de Webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/2)
 
 en 
@@ -28,10 +30,11 @@ en
 [breakdownschetsen van de webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/1)
 
 ## Bouwen
-Momenteel is er niet veel HTML gebruikt om deze pagina te bouwen. Vanwege de media player en de comment sectie is er geen nood om grote blokken text te gebruiken voor deze pagina. Voor de hoofdpagina zou ik meer HTML gebruiken om alle artiekelen/webinars en CT scans te laten zien in een grid. Er is wel een heleboel CSS gebruikt om verschillende "secties" op deze pagina te gebruiken. Ik heb een articles sectie, speaker profile, navbar en de hooftstuk, een mediaplayer gemaakt die netjes op de pagina zijn geplaatst om alle informatie bereikbaar te maken, zonder het focus op de mediaplayer af te leiden. Ik heb ook een stukje JavaScript geschreven om de comments sectie bruikbaar te maken.
+Momenteel is CSS mijn meestgebruikte taal om deze pagina te bouwen. Vanwege de media player en de comment sectie is er geen nood om grote blokken text te gebruiken voor deze pagina. Tijdens deze sprint heb ik meer HTML gebruikt om artiekelen/webinars en contourings te laten zien in een grid.  Ik heb een articles sectie, speaker profile, navbar en de hooftstuk, een mediaplayer gemaakt die netjes op de pagina zijn geplaatst om alle informatie bereikbaar te maken, zonder het focus op de mediaplayer af te leiden. 
 
 ## Sprint Review
-Donderdag 24 Oktober gaat onze tweede Sprint Review plaatsvinden. Dit gaan we via Teams om 11:00 houden.
+Onze vierde sprint review is gepland voor December. Dit gaan we via Teams om 11:00 houden.
+Voor deze sprint review wil ik verschillende issues oplossen die tijdens de derde sprint review zijn gemaakt. 
 
 Contact Ongologie Antoni van Leeuwenhoek Ziekenhuis: j.v.diessen@nki.nl 
 Contactpersoon FDND studenten: vdgraaf.tessa@gmail.com
