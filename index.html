@@ -13,24 +13,28 @@
     <header>
       <nav>
           <ul>
+            <li> <img src="/assets/avllogo.png"
+              alt="Logo"
+              class="logo"
+            /></li>
               <li><a href="#">Webinars</a></li>
               <li><a href="#">Contouring</a></li>
               <li><a href="#">Articles</a></li>
               <li><a href="#">Profile</a></li>
+              <span
+              class="hamburger"
+              style="font-size: 34px; cursor: pointer; color: white;"
+              onclick="openNav()"
+              >&#9776;</span
+            >
           </ul>
       </nav>
-      <div class="search-container">
-          <input type="text" class="search-input" placeholder="I'm looking for...">
+      <div class="search">
+          <input type="text" placeholder="I'm looking for...">
       </div>
   </header>
 
-  <section class="main page">
-          <span
-            class="hamburger"
-            style="font-size: 38px; cursor: pointer; color: white;"
-            onclick="openNav()"
-            >&#9776;</span
-          >
+  <section class="main-page">
         </div>
       </div>
     </div>
@@ -46,8 +50,8 @@
           ></iframe>
         </div>
 
-        <div class="commentdiv">
-          <h1 class="commentheader">Comment</h1>
+        <div class="commentsection">
+          <h1 class="headings">Comment</h1>
           <textarea
             style="width: 100%"
             class="textarea"
@@ -61,22 +65,22 @@
 
     <!-- Speaker profile  -->
     <div class="container">
-      <div class="speaker">
-        <div class="speakerwrapper">
+      <div class="speakercard">
+        <div class="speakerinfo">
           <div>
             <img
               src="/assets/nurse.png"
               alt="Nurse Img"
-              class="nurseimg"
+              class="speakerpicture"
             />
           </div>
 
           <div>
-            <h1 class="header">Mirte van der Spek</h1>
-            <h2 class="subheader">Mirte van der Spek</h2>
+            <h1 class="headings">Mirte van der Spek</h1>
+            <h2 class="subheader">Antoni van Leeuwenhoek Ziekenhuis - Oncology department</h2>
           </div>
         </div>
-
+        <button class="showmore">Show more</button>
         <p class="speakerinfo">
           Sinds juni 2021 ben ik werkzaam als verpleegkundig specialist bij de
           mamma interne geneeskunde in het Antoni van Leeuwenhoek. Het Antoni
@@ -86,13 +90,15 @@
           disciplines en bovenal voor excellente- en persoonsgerichte zorg voor
           de patiënten.
         </p>
+
+
       </div>
     </div>
 
     <!-- contourings  -->
     <div class="container">
       <div class="contourings">
-        <h1 class="contouringheader">Contourings from this webinar</h1>
+        <h1 class="headings">Contourings from this webinar</h1>
 
         <div class="card">
           <!-- card-one  -->
@@ -108,9 +114,7 @@
           </div>
 
           <!-- card-two  -->
-          <div class="card">
-            <!-- card-one  -->
-            <div class="carddiv">
+          <div class="carddiv">
               <h1 class="cardheader">IMA 4-31</h1>
               <p class="cardinfo">Accessory parotid</p>
   
@@ -122,9 +126,7 @@
             </div>
 
           <!-- card-three  -->
-          <div class="card">
-            <!-- card-one  -->
-            <div class="carddiv">
+          <div class="carddiv">
               <h1 class="cardheader">IMA 4-31</h1>
               <p class="cardinfo">Accessory parotid</p>
   
@@ -139,34 +141,43 @@
     </div>
 
     <!-- Articles  -->
+
     <div class="container">
-      <div class="articlewrapper">
-        <div class="articlecard">
-          <div class="leftdiv">
-            <h1 class="articleheader">Fractionation in head and neck</h1>
-            <p class="articletext">Fractionation in head and neck</p>
-            <button class="articlebutton">Read More</button>
+      <div class="contourings">
+        <h1 class="headings">Contourings from this webinar</h1>
+
+        <div class="card">
+          <!-- card-one  -->
+          <div class="carddiv">
+            <div class="articlecardsmall">
+            <h1 class="cardheader">Fractionation in head & neck</h1>
+            <p class="cardinfo">Mirthe van der Spek</p>
+
+            <img src="/assets/article1.png" 
+            alt="Article header that reads fractionation in head and neck"
+            class="cardimg" />
+          </div>
           </div>
 
-          <div class="right-div">
-            <img src="/assets/article1.png" alt="Article header that reads fractionation in head and neck" />
-          </div>
-        </div>
+          <!-- card-two  -->
+          <div class="carddiv">
+            <div class="articlecardsmall">
+              <h1 class="cardheader">Gastrointestinal</h1>
+              <p class="cardinfo">Mirthe van der Spek</p>
+  
+              <img
+              src="/assets/article2.png" 
+              alt="Article header that reads gastrointestinal"
+              class="cardimg"
+              />
+            </div>
+            </div>
 
-        <div class="articlecard">
-          <div class="leftdiv">
-            <h1 class="articleheader">Gastrointestinal</h1>
-            <p class="articletext">Gastrointestinal</p>
-            <button class="articlebutton">Read More</button>
-          </div>
 
-          <div class="rightdiv">
-            <img src="/assets/article2.png" alt="Article header that reads gastrointestinal" />
-          </div>
         </div>
       </div>
     </div>
-  </section>
+
     <!-- footer  -->
     <footer>
       <p>&copy; 2024 All rights reserved.</p>
@@ -177,17 +188,15 @@
       </ul>
   </footer>
     <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("mybackdrop").style.width = "100%";
-        document.body.style.overflow = "hidden";
-      }
+      let showMoreButton = document.querySelector('.showmore');
+      showMoreButton.addEventListener('click', function() {
+    showMoreButton.classList.add('showingmore');
+})
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("mybackdrop").style.width = "0";
-        document.body.style.overflow = "";
-      }
+let hamburgerButton = document.querySelector('.sidenav');
+      hamburgerButton.addEventListener('click', function() {
+    hamburgerButton.classList.add('openNav', 'backgroundblur');
+  })
     </script>
 
   </body>
