@@ -24,17 +24,16 @@ Wat maken we? We zoeken een manier om CT-scans te delen en feedback te geven, en
 Dit zijn mijn schetsen voor de website tot nu toe:
 
 [versie 1 van de Webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/2)
-
-en 
-
 [breakdownschetsen van de webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/1)
+[schetsen van de Mobile First responsive versie van Sprint 4](.https://github.com/misspastelwitch/look-and-feel-corporate-identity/issues/8)
+
 
 ## Bouwen
-Momenteel is CSS mijn meestgebruikte taal om deze pagina te bouwen. Vanwege de media player en de comment sectie is er geen nood om grote blokken text te gebruiken voor deze pagina. Tijdens deze sprint heb ik meer HTML gebruikt om artiekelen/webinars en contourings te laten zien in een grid.  Ik heb een articles sectie, speaker profile, navbar en de hooftstuk, een mediaplayer gemaakt die netjes op de pagina zijn geplaatst om alle informatie bereikbaar te maken, zonder het focus op de mediaplayer af te leiden. 
+Momenteel is CSS mijn meestgebruikte taal om deze pagina te bouwen. Vanwege de media player en de comment sectie is er geen nood om grote blokken text te gebruiken voor deze pagina. Tijdens deze sprint heb ik meer HTML gebruikt om artiekelen/webinars en contourings te laten zien in een grid.  Ik heb een articles sectie, speaker profile, navbar en de hooftstuk, een mediaplayer gemaakt die netjes op de pagina zijn geplaatst om alle informatie bereikbaar te maken, zonder het focus op de mediaplayer af te leiden. Momenteel werk ik op de Javascript van de site. Dit gaat over knopjes interactief te maken, en de user een meer hands-on ervaring te geven.
 
 ## Sprint Review
-Onze vierde sprint review is gepland voor December. Dit gaan we via Teams om 11:00 houden.
-Voor deze sprint review wil ik verschillende issues oplossen die tijdens de derde sprint review zijn gemaakt. 
+Onze vierde sprint review is gepland voor eind December. Dit gaan we via Teams om 11:00 houden.
+Voor deze sprint review wil ik verschillende issues oplossen die tijdens de derde sprint review zijn gemaakt, zoals replies in mijn comment sectie mogelijk maken, en verschillende tags voor playlists maken.
 
 Contact Ongologie Antoni van Leeuwenhoek Ziekenhuis: j.v.diessen@nki.nl 
 Contactpersoon FDND studenten: vdgraaf.tessa@gmail.com
