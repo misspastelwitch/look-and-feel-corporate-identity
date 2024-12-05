@@ -23,9 +23,13 @@ Wat maken we? We zoeken een manier om CT-scans te delen en feedback te geven, en
 
 Dit zijn mijn schetsen voor de website tot nu toe:
 
+-
 [versie 1 van de Webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/2)
+-
 [breakdownschetsen van de webinar Pagina](./https://github.com/misspastelwitch/the-client-website/issues/1)
+-
 [schetsen van de Mobile First responsive versie van Sprint 4](.https://github.com/misspastelwitch/look-and-feel-corporate-identity/issues/8)
+-
 
 
 ## Bouwen
