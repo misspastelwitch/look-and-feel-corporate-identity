@@ -41,18 +41,18 @@ body {
     margin-inline:auto;padding-inline:16px}
 
 .general {
-    display: flex;
-    gap: 20px;
-    box-sizing: border-box;
-    margin-top: 2rem;
-    margin-bottom: 2rem
-}
-
-@media (max-width: 991px) {
-    .general {
-        flex-direction:column;
         margin-top: 1rem;
         margin-bottom: 1rem
+}
+
+@media (min-width: 991px) {
+    .general {
+        flex-direction: row;
+        display: flex;
+        gap: 20px;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        margin-bottom: 2rem
     }
 }
 
@@ -90,14 +90,14 @@ nav ul li a {
 
 .webinar {
     flex: 1 1 60%;
-    max-width: 60%;
+    min-width: 60%;
     height: 100%;
     box-sizing: border-box
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
     .webinar {
-        max-width:100%
+        min-width:60%
     }
 }
 
@@ -109,8 +109,8 @@ iframe {
 
 
 .commentsection {
-    flex: 1 1 35%;
-    max-width: 35%;
+    min-width:35%
+    max-width: 100%;
     padding: 10px;
     border-radius: 10px;
     background-color: #fff;
@@ -118,9 +118,16 @@ iframe {
     box-sizing: border-box
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
     .commentsection {
-        max-width:100%
+        flex: 1 1 35%;
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+        box-sizing: border-box
+        min-width:35%
     }
 }
 
@@ -193,14 +200,8 @@ iframe {
     margin-bottom: 2rem
 }
 
-@media (max-width: 991px) {
-    .speakercard {
-        margin-top:1rem;
-        margin-bottom: 1rem
-    }
-}
 
-@media (max-width: 630px) {
+@media (min-width: 630px) {
     .speakercard {
         padding:12px
     }
@@ -242,16 +243,10 @@ iframe {
     margin-bottom: 2rem
 }
 
-@media (max-width: 991px) {
+@media (min-width: 630px) {
     .parotid-wrapper {
         margin-top:1rem;
         margin-bottom: 1rem
-    }
-}
-
-@media (max-width: 630px) {
-    .parotid-wrapper {
-        padding:12px
     }
 }
 
@@ -262,21 +257,21 @@ iframe {
 
 .card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px
 }
 
-@media (max-width: 991px) {
+@media (min-width: 630px) {
     .card {
         grid-template-columns:repeat(2,1fr)
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 991px) {
     .card {
-        grid-template-columns:repeat(1,1fr)
+        grid-template-columns:repeat(3,1fr)
     }
 }
 
@@ -286,13 +281,6 @@ iframe {
     width: 100%;
     margin-top: 1.5rem;
     border-radius: 10px
-}
-
-@media (max-width: 630px) {
-    .carddiv {
-        width:100%;
-        padding: 10px
-    }
 }
 
 .cardheader {
@@ -324,23 +312,18 @@ iframe {
 
 
 .articlecard {
-    display: flex;
-    gap: 2rem
+    gap:1rem;
+    flex-direction: column
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
     .articlecard {
-        gap:1rem;
-        flex-direction: column
+        display: flex;
+        gap: 2rem
     }
 }
 
 
-@media (max-width: 991px) {
-    .leftdiv {
-        width:100%
-    }
-}
 
 .articlebutton {
     width: 119px;
@@ -353,13 +336,6 @@ iframe {
     cursor: pointer
 
 }
-
-@media (max-width: 991px) {
-    .rightdiv img {
-        width:100%
-    }
-}
-
 
 /* Footer */ 
 
