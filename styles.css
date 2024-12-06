@@ -85,6 +85,53 @@ nav ul li a {
     font-weight: bold;
 }
 
+@keyframes regenboog {
+	100% {
+		background-position:right top;
+	}
+}
+
+/*  */
+navbuttons {
+	appearence:none;
+	
+	padding:.5em 1em;
+	
+	background-image:
+		linear-gradient(
+			45deg,
+			var(#6a0025),
+			var(#e15f8d),
+			var(#f191b2),
+
+		);
+	background-size:200% 200%;
+	background-position:left bottom;
+	border:none;
+	border-radius:2em;
+	
+	font:inherit;
+	color:var(--wit);
+	
+	outline:none;
+	cursor:pointer;
+	
+	animation:navbuttons 2s infinite linear paused;
+}
+
+
+ button:hover,
+ button:focus-visible{
+	animation-play-state:running;
+}
+
+
+button:active {
+	box-shadow:inset 0 .5em 0 var(--zwart);
+	padding:1em 1em 0em;
+}
+*/
+
 /* Webinar */
 
 
